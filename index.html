@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+<body>
+    <h1 id="text">Unit Convertor</h1>
+    <div class="container">
+        <form>
+            <div id="values">
+                <div>
+                    <span>Value (meter)</span>
+                    <input type="text" id="val" value="">
+                </div>
+        
+                <div>
+                    <span>Convert into</span>
+                    <select id="convertor">
+                        <option id="km" value="km">Kilometer</option>
+                        <option id="cm" value="cm">Centimeter</option>
+                        <option id="mm" value="mm">Millimeter</option>
+                        <option id="mim" value="mim">Micrometer</option>
+                        <option id="nm" value="nm">Nanometer</option>
+                    </select>  
+                </div>
+            </div>
+            
+            <div id="res">
+                <span>Result</span>
+                <input type="text" id="ans">
+            </div>
+        </form>
+    
+        <div id="button">
+            <button id="result" type="submit" onclick="valueConvert()">SUBMIT</button>
+            <button id="reset" type="submit" onclick="clearForm()">RESET</button>
+        </div>
+    </div> 
+
+    <script src="app.js"></script>
+</body>
+</html>
